@@ -17,19 +17,16 @@ export default defineConfig({
     Vue(),
     Layouts(),
     Pages({
-      extensions: ['vue']
+      extensions: ['vue'],
     }),
     AutoImport({
-      imports: [
-        'vue',
-        'vue-router',
-      ],
-      dts: 'src/auto-imports.d.ts'
+      imports: ['vue', 'vue-router'],
+      dts: 'src/auto-imports.d.ts',
     }),
     Components({
       extensions: ['vue'],
       include: [/\.vue$/, /\.vue\?vue/],
-      dts: 'src/components.d.ts'
+      dts: 'src/components.d.ts',
     }),
     Inspect({
       enabled: false,
@@ -43,9 +40,6 @@ export default defineConfig({
   },
 
   optimizeDeps: {
-    include: [
-      'vue',
-      'vue-router',
-    ]
+    include: ['vue', 'vue-router'],
   },
 })

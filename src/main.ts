@@ -8,8 +8,8 @@ import '~/assets/scss/main.scss'
 const routes = setupLayouts(generatedRoutes)
 
 const router = createRouter({
-    history: createWebHashHistory(),
-    routes
+  history: createWebHashHistory(),
+  routes,
 })
 
 createApp(App).use(router).mount('#app')
